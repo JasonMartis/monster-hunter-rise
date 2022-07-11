@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* overflow-x: hidden; */
+  font-family: "Lato", sans-serif;
+}
+
+.mhr {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(./images/sunbreak.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========== [1. index.html] =========== */
+
+/* 1. Landing Page  */
+/* 2. Navbar  */
+/* 3. Game Info  */
+/* 4. Features  */
+/* 5. Pictures  */
+/* 6. CTA  */
+/* 7. Footer  */
+
+/* === 1. LANDING PAGE ===  */
+
+.landing-page {
+  position: relative;
+  width: 100vw;
+  min-height: 95vh;
+  background-image: url(./images/sunbreak.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.nintendo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* .body-background{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/sunbreak.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* === 2. NAVBAR ===  */
+nav {
+  width: 100vw;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  margin-left: 0.5em;
+}
+
+ul li a {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* === 3. GAME INFO ===  */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+
+.game-img {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./images/game-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid white;
+}
+
+.game-info {
+  padding: 2em 1em;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* === 4. FEATURES ===  */
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+.feature-container a {
+  list-style-type: none;
+  color: black;
+}
+
+.feature-container h2 {
+  text-align: center;
+}
+
+.feature-box1 {
+  grid-area: a;
+}
+
+.feature-box2 {
+  grid-area: b;
+}
+
+.feature-box3 {
+  grid-area: c;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em auto;
+  padding: 1em 0;
+  border: 3px solid #ecbf2b;
+  background-color: white;
+  width: 300px;
+  height: 250px;
+}
+
+/* === 5. PICTURES ===  */
+
+.pictures-container {
+  height: 100%;
+  padding: 2em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+
+.pictures1 {
+  grid-area: a;
+  background-image: url(./images/picture1.jpg);
+}
+
+.pictures2 {
+  grid-area: b;
+  background-image: url(./images/picture2.jpg);
+}
+
+.pictures3 {
+  grid-area: c;
+  background-image: url(./images/picture3.jpg);
+}
+
+.pictures4 {
+  grid-area: d;
+  background-image: url(./images/picture4.jpg);
+}
+
+.pictures1,
+.pictures2,
+.pictures3,
+.pictures4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #ecbf2b;
+  width: auto;
+  min-height: 10em;
+}
+
+/* === 6. CTA ===  */
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+
+.cta-img {
+  width: 300px;
+  height: 50vh;
+  background-image: url(./images/switch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: aliceblue;
+  border: 3px solid #ecbf2b;
+  margin: 0 auto;
+}
+
+.cta-info {
+  padding-top: 2em;
+  color: white;
+  text-align: center;
+}
+
+.cta-button {
+  width: 50%;
+  max-width: 300px;
+  height: 3em;
+  border: 1px solid #ecbf2b;
+  border-radius: 5px;
+  background-color: red;
+  color: #ecbf2b;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.cta-button a {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+/* === 7. FOOTER ===  */
+footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: black;
+  text-align: center;
+}
+
+/* =========== [2. contact.html] =========== */
+
+span {
+  color: red;
+}
+
+iframe {
+  visibility: hidden;
+}
+
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./monster/monsters-background.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-container {
+  position: relative;
+  text-align: center;
+  padding: 1em;
+  border-bottom: 2px solid black;
+}
+
+.home {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* =========== [3. monsters.html] =========== */
+
+.monsters-background {
+  min-height: 100vh;
+  background-image: url(./monster/monsters-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.monster-box {
+  padding: 0 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.monster-container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.monster-container h1 {
+  margin: 1em 0;
+}
+
+.monster-img {
+  /* padding: 0 4em; */
+}
+
+.monster-info {
+  width: 75%;
+  margin-bottom: 2em;
+}
+
+/* =========== [ media querie page] =========== */
+
+/* Desktop */
+
+/* === 4. FEATURES ===  */
+@media (min-width: 600px) {
+  .pictures-container {
+    padding: 2em 4em;
+  }
+
+  .pictures1,
+  .pictures2,
+  .pictures3,
+  .pictures4 {
+    min-height: 20em;
+  }
+}
